@@ -41,7 +41,7 @@ function onTick()
         LeftReverse = true
     end    
 
-    Throttle = math.abs(WS+AD)*Power
+    Throttle = math.abs(WS-AD*Power)
 
     output.setNumber(1,math.abs(Right))
 	output.setNumber(2,math.abs(Left))
